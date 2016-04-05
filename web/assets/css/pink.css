@@ -1,0 +1,17 @@
+a {
+    color: pink;
+}
+
+.characters-img {
+    height: 100px;
+    border: 1px solid black;
+}
+
+th {
+    border: 1px solid black;
+    background: grey;
+}
+
+.true-last-img {
+    border: 1px solid black;
+}

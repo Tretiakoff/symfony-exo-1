@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}DeathSmiles{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('assets/css/pink.css') }}">
+{% endblock %}
+
+{% block body %}
+    <table>
+        <tr>
+            <th>Windia</th>
+            <th>Casper</th>
+            <th>Follet</th>
+            <th>Rosa</th>
+            <th>Sakura</th>
+        </tr>
+        <tr>
+           <td>
+               <img src="{{ asset('assets/img/windia.jpg') }}" alt="windia" class="characters-img">
+           </td>
+            <td>
+                <img src="{{ asset('assets/img/casper.jpg') }}" alt="casper" class="characters-img">
+            </td>
+            <td>
+                <img src="{{ asset('assets/img/follet.jpg') }}" alt="follet" class="characters-img">
+            </td>
+            <td>
+                <img src="{{ asset('assets/img/rosa.jpg') }}" alt="rosa" class="characters-img">
+            </td>
+            <td>
+                <img src="{{ asset('assets/img/sakura.jpg') }}" alt="sakura" class="characters-img">
+            </td>
+        </tr>
+    </table>
+{% endblock %}

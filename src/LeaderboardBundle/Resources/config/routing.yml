@@ -1,0 +1,24 @@
+leaderboard_homepage:
+    path:     /
+    defaults: { _controller: LeaderboardBundle:Default:index }
+
+deathsmiles:
+    path:      /deathsmiles
+    defaults:  { _controller: LeaderboardBundle:Pink:deathsmiles }
+
+crimzon_clover:
+    path:      /crimzon_clover
+    defaults:  { _controller: LeaderboardBundle:NotPink:crimzonClover }
+
+crimzon_clover_type:
+    path:      /crimzon_clover/{type}
+    defaults:  { _controller: LeaderboardBundle:NotPink:crimzonCloverType }
+
+ikaruga:
+    path:      /ikaruga
+    defaults:  { _controller: LeaderboardBundle:NotPink:ikaruga }
+
+ikaruga_background :
+    path :      /ikaruga/{background}
+    defaults:   { _controller: LeaderboardBundle:NotPink:ikarugaBackground }
+

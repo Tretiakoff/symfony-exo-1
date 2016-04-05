@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Crimzon Clover{% endblock %}
+
+{% block body %}
+
+    <h1>Voir un vaisseau </h1>
+    <nav>
+        <ul>
+            <li><a href="/crimzon_clover/type1">Type 1</a></li>
+            <li><a href="/crimzon_clover/type3">Type 3</a></li>
+            <li><a href="/crimzon_clover/typeZ">Type Z</a></li>
+        </ul>
+    </nav>
+
+    {% if type is defined %}
+        {% if type == 'type1' %}
+            <h3>Type 1</h3>
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/c38pCoud9yE" frameborder="0"
+                    allowfullscreen></iframe>
+        {% elseif type == 'type3' %}
+            <h3>Type 3</h3>
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/yVnwkIMlfmE" frameborder="0"
+                    allowfullscreen></iframe>
+        {% else %}
+            <h3>Type Z</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZNNQqxVOeo4" frameborder="0"
+                    allowfullscreen></iframe>
+        {% endif %}
+    {% else %}
+        <h3>Type Z</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZNNQqxVOeo4" frameborder="0"
+                allowfullscreen></iframe>
+    {% endif %}
+
+{% endblock %}
